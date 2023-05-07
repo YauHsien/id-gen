@@ -71,7 +71,7 @@ pid(Id) :-
 
 idnum(Num) :-
     gen_1(A), gen_2_to_8([B,C,D,E,F,G,H]),
-    format(atom(Num), "~d~d~d~d~d~d~d~d", [A,B,C,D,E,F,G,H]).
+    format(atom(Num), "~d,~d,~d,~d,~d,~d,~d,~d", [A,B,C,D,E,F,G,H]).
 
 go :-
     foreach(pid(Id), writeln(Id)).
